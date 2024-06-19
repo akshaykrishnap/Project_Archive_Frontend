@@ -21,8 +21,8 @@ function Authentication({ register }) {
         email: "",
         password: ""
     })
-
-    const navigate = useNavigate()  // naviagte to login
+ 
+    const navigate = useNavigate() // naviagte to login
 
     console.log(userData);
 
