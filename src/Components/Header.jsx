@@ -14,7 +14,7 @@ function Header() {
   const navigate =useNavigate()
 
   const handleLogOut = ()=>{
-    sessionStorage.removeItem("")
+    sessionStorage.removeItem("existingUsers")
     sessionStorage.removeItem("token")
     navigate('/')
   }

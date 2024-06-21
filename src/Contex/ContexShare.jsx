@@ -11,6 +11,8 @@ function ContexShare({ children }) {
   const [addProjectResponse, setAddProjectResponse] = useState({})
   const [editProjectResponse, setEditProjectResponse] = useState({})
   const [AuthorToken, setAuthorToken] = useState(true)
+
+  
   
   return (
 
@@ -20,6 +22,7 @@ function ContexShare({ children }) {
       <addProjectResponseContext.Provider value={{ addProjectResponse, setAddProjectResponse }}>
        <editProjectResponseContext.Provider value={{editProjectResponse, setEditProjectResponse}} >
           <logoutResponseContext.Provider value={{AuthorToken,setAuthorToken}}> 
+         
           {children}
           </logoutResponseContext.Provider> 
        </editProjectResponseContext.Provider> 
